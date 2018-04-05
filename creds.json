@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "stunning-ripsaw-200022",
+  "private_key_id": "c63df7064fb70de9bf82591cdf9257d8b43916db",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC2biY389FMyESW\n4ofVyNrCxsnEOmGN9GE80Fg4i4IbApAdEgiG6xtz4AGgqZaDJ0LIgtirbPf7JMj2\nAFT7YosWt1QWF0ngNWJEeW+Gr0QoJCFvKLbHkAqDuJuWz7dlHjPbeygKhCKsNznS\nAcB25miFHgR+r0DZfD3hhPW4qWTMfiP+CzcveSE3Ud6edUdyzppjCRa1Nfs9Nvyf\n3stLYvf1l0iR4GaUqNn1lNLtQLTTrgmgchN0XbiVZpyWJ0eoviQjbkvs+6N6Eebt\n3sJQLwIsOCW5ZLUWFQTbKflgcVr2uWG5WkC9wLqPAdm2CaG/zvTbRc7WR6HO9aBZ\nkeP4lzv7AgMBAAECggEATWSfbB9QzM0tZAGIdOa3/+fLkybdWhax5dXRh3OP55uH\nvf13hp1ZUShYKGupwcw3Jc900gzxiycI5mwvoVImBaYS0yhgG/Ep1jjaWn4iYREq\n6fiQykrOWyFHSIyolgphH5y42PVDrGHlcrVxjD+lWcvpRkFdNqbhrbn1cLjUXXfw\n8icZi9LUc4Q+2rxBwJyZanSOQxsHxJ3oFIN6doxiCOetOGBlV9lDGp2e5FVeGUAe\nZpDnQCpsd7ngHMCN7lgtTA42cs4mgp5e2gwUJEgLVSQGwEdggUKW/DKe9rWLkhM7\n4ZXPErevyXrXcKdo0l49BQHcKpbpkWTwecILZftC6QKBgQD4Z+wSCV9qnlKERhz1\ncmP0b9JTYGU5UZakOiErOrJB9R6XfPGaIyS3MCbbn4a4e4VCM4glwYbac0v0Mmou\nIy/tL0SGPRAQCYFkDX6nEFbdPE3XgnhD9wPXb9c4XOQ4PeqXFt1ZOcXHHvPOYgyL\nYcPeQOfTM4eIWPmiMB1TIIRwpQKBgQC8AeMwD4K5T4qt810hpPHVpSbdMIHNm7BJ\nWShvIFg9E0RTpGQwe2+5EZHvg65Oc9Epjd145igQZXbM0+GvP4C4NV3ygCeY/nlG\nqfMfglvMdZHufTaqqcncq5GOytiSPTcmvYr1Vy/0ZM55tsKmvGlvdrKlRe1tXgV6\nVsVClou4HwKBgQCTGyAPcmOCRW5CjS77IBoXmN0qqSxo7GtUqGQaMLF+JAZQ2hpO\nGL/WiHqKl4d12xiIovHewiP1XFA/tldxKT9prBNdl+3aQXbR5Lf7gc6fR+YlWUuV\nnEQ3IjGHXGN+9xPlFBJTk8YPbMIfl6ssI+KVzUQ8rAh4c5CqPuou31PvTQKBgFzo\nxeAjWiO/1jW+laChxc0hz4HxjcQRE148DEpWfqS4F8UJ8WUwKvcXYrotpf8pJw1V\nCUTM4LGxorL4ZohXZoIiBWpowKjP4Rj1tas1na39z/8+q7xNKe++bbFWNw6V5+Ji\nOwChdJZfFtZ5ZdpGNAicbQ5V705j72sU5GjSwvtbAoGAERYYbLleorQzglkHKH6d\nr8/0L+VR3M6Qxd7+0rjuODDthuNOkjWUv8M+RT2MJ8tIxuYfF8BYmIRn6IIMm7RE\niEIBjbyUS/JkH+eRoQIPaixTbwkDJyJuLuVyePa86+fCcNbUMFEoU/zCTStDum77\nmmrD4V5ZRoGXdQv63KhTvQw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "edit-429@stunning-ripsaw-200022.iam.gserviceaccount.com",
+  "client_id": "113657557578739890599",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/edit-429%40stunning-ripsaw-200022.iam.gserviceaccount.com"
+}
