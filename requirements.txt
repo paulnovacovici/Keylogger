@@ -1,0 +1,4 @@
+keyboard==0.13.1
+pip==1.5.4
+gspread==3.0.0
+google_api_python_client==1.6.7

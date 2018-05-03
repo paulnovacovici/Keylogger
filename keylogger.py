@@ -24,6 +24,7 @@ except ImportError:
 try:
     from oauth2client.client import SignedJwtAssertionCredentials
 except ImportError:
+    install('google-api-python-client')
     install('oauth2client')
     from oauth2client.client import SignedJwtAssertionCredentials
 try:
